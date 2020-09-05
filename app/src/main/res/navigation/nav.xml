@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav"
+    app:startDestination="@id/jobListFragment">
+
+    <fragment
+        android:id="@+id/jobListFragment"
+        android:name="demo.jobslist.fragments.JobListFragment"
+        android:label="JobListFragment"
+        tools:layout="@layout/fragment_job_list">
+        <action
+            android:id="@+id/action_jobListFragment_to_jobDetailFragment"
+            app:destination="@id/jobDetailFragment"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/jobDetailFragment"
+        android:name="demo.jobslist.fragments.JobDetailFragment"
+        android:label="JobDetailFragment"
+        tools:layout="@layout/fragment_job_details">
+        <argument
+            android:name="job_id"
+            app:argType="integer" />
+    </fragment>
+</navigation>

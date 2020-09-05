@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Jobs Module</string>
+    <string name="jobs_list">List of Jobs</string>
+    <string name="today">Today</string>
+    <string name="tomorrow">Tomorrow</string>
+    <string name="job_details">Details of the job:</string>
+    <string name="en_route">En route:</string>
+    <string name="job_location">Job Location:</string>
+    <string name="minutes_time"> : in %d minutes</string>
+    <string name="formatted_countdown">%s %s</string>
+</resources>
